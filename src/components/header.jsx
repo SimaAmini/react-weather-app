@@ -6,7 +6,7 @@ import CurrentDate from './current-date';
 const Header = props => {
   return (
     <header className="header">
-      <Location city={props.location} />
+      <Location location={props.location} />
       <CurrentDate />
     </header>
   );

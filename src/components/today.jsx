@@ -17,8 +17,8 @@ export class Today extends Component {
   };
   async componentDidMount() {
     try {
-      const { city } = await getLocation();
-      this.props.onLocationChange(city);
+      const { city, country } = await getLocation();
+      this.props.onLocationChange({ city: city, country: country });
       const { main, weather } = await getWeather(city);
       this.setState({ city, weather, main });
     } catch (err) {

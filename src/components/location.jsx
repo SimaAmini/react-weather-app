@@ -4,6 +4,7 @@ const Location = props => {
   return (
     <div className="header__location">
       {props.location ? props.location.city : ''}
+      {props.location ? `, ${props.location.country}` : ''}
     </div>
   );
 };
