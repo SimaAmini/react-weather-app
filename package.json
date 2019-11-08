@@ -6,10 +6,10 @@
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
-    "open-weather-icons": "0.0.8",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "weather-icons-lite": "^1.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",

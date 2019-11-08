@@ -1,4 +1,4 @@
-const LOCATION_URL = 'https://ipinfo.io';
+const LOCATION_URL = 'https://ipinfo.io/geo';
 
 export async function getLocation() {
   const response = await fetch(

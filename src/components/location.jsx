@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Location = props => {
+const Location = ({ city, country }) => {
   return (
     <div className="header__location">
-      {props.location ? props.location.city : ''}
-      {props.location ? `, ${props.location.country}` : ''}
+      {city ? city : ''}
+      {country ? `, ${country}` : ''}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap&subset=latin-ext");
 
-@import "../node_modules/open-weather-icons/dist/css/open-weather-icons.css";
+@import "../node_modules/weather-icons-lite/css/weather-icons-lite.css";
 
 @mixin center-content {
   display: flex;
@@ -52,7 +52,7 @@ body {
   grid-row: 2/3;
   // background-color: aqua;
   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -91,11 +91,14 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-.navigation {
+.forecast {
   grid-column: 2/5;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-template-columns: repeat(7, 1fr);
+
   &__item {
     @include center-content;
+    display: flex;
+    flex-direction: column;
   }
 }
