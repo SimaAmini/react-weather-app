@@ -93,7 +93,7 @@ footer {
 }
 .forecast {
   grid-column: 2/5;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(7, 1fr);
 
   &__item {
