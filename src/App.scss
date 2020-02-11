@@ -45,7 +45,6 @@ body {
   // background-color: yellow;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
 }
 .today {
   grid-column: 3/4;
